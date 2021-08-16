@@ -1,0 +1,908 @@
+* {
+   box-sizing: border-box;
+}
+
+body,
+html {
+   margin: 0;
+   overflow-x: hidden;
+   font-family: 'Trebuchet MS', Arial, sans-serif;
+   width: 100%;
+   height: 100%;
+
+}
+
+body {
+   position: relative;
+   zoom: 0.9;
+}
+
+
+
+
+a {
+   text-decoration: none;
+   color: black;
+}
+
+
+@font-face {
+   font-family: "Chocolate Cookies";
+   src: url(../fonts/Chocolate\ Cookies.ttf);
+}
+
+@font-face {
+   font-family: "Bebas Regular";
+   src: url(../fonts/Bebas-Regular.otf);
+}
+
+@font-face {
+   font-family: "Bebas Neue";
+   src: url(../fonts/BebasNeue.ttf);
+}
+
+.nome {
+   font-family: "Chocolate Cookies";
+   font-size: 3.0em;
+   margin-left: 20px;
+}
+
+.nome:hover {
+   transform: scale(1.11);
+
+}
+
+.cabecalho {
+   display: flex;
+   background-color: black;
+   justify-content: center;
+   align-content: center;
+   flex-wrap: wrap;
+}
+
+.infos-especiais {
+   display: flex;
+   width: 100%;
+   height: 30px;
+   background-color: #edf2f4;
+   color: black;
+   justify-content: space-between;
+   align-items: center;
+   padding: 0px 300px;
+   font-weight: 500;
+
+}
+
+.infos-especiais a {
+   margin: 2px;
+}
+
+.main-cabecalho {
+   display: flex;
+   width: 100%;
+   height: 80px;
+   justify-content: space-between;
+   align-items: center;
+   padding: 0px 300px;
+   flex-grow: 1;
+   color: white;
+   font-size: 14px;
+}
+
+.main-cabecalho a {
+   color: white;
+}
+
+.main-cabecalho .svg-inline--fa.fa-w-18 {
+   width: 25px;
+   height: 22px;
+}
+
+.main-cabecalho .svg-inline--fa.fa-w-16 {
+   width: 25px;
+   height: 22px;
+}
+
+.search-box {
+   display: flex;
+   flex-grow: 1;
+   justify-content: center;
+   align-items: center;
+}
+
+.search-box input {
+   z-index: 1;
+   width: 80%;
+   border: none;
+   padding: 13px 13px 13px 22px;
+   outline: 0;
+   font-size: 1.0em;
+}
+
+.botaoLupa {
+   display: flex;
+   height: 42px;
+   width: 42px;
+   align-items: center;
+   justify-content: center;
+   background-color: white;
+   border: none;
+}
+
+.botaoLupa:hover {
+   background-color: black;
+   color: white;
+
+}
+
+.botaoLupa:hover .svg-inline--fa {
+   color: white;
+}
+
+.search-box .svg-inline--fa {
+   color: black;
+   vertical-align: center;
+
+}
+
+
+.menu-direita {
+   display: flex;
+   height: 100%;
+   align-items: center;
+}
+
+.item-md {
+   padding: 0px 50px 0px 5px;
+}
+
+
+
+.menu {
+   display: flex;
+   width: 100%;
+   height: 40px;
+   background-color: white;
+
+   align-items: center;
+   font-weight: bold;
+   padding: 0px 300px;
+}
+
+.cep {
+   display: flex;
+   justify-self: flex-start;
+   align-items: center;
+   border-right: 1px solid lightgray;
+   height: 40px;
+   padding-right: 70px;
+}
+
+.cep p {
+   font-size: 11px;
+   padding-left: 7px;
+   color: darkgray;
+}
+
+.cep .svg-inline--fa {
+   width: 25px;
+   height: 22px;
+}
+
+.opcoes {
+   padding-left: 10px;
+   height: 40px;
+   width: 80%;
+   display: flex;
+   justify-content: flex-start;
+   align-items: baseline;
+   position: relative;
+}
+
+.opcoes a {
+   padding: 0px 5px;
+   font-size: 16px;
+   font-weight: 100;
+}
+
+.opcoes .catag2 {
+   display: flex;
+   width: 80%;
+   justify-content: space-between;
+   align-self: center;
+}
+
+
+.opcoes .svg-inline--fa {
+   font-size: 18px;
+}
+
+.menu-categorias {
+   padding-right: 20px;
+   height: 40px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.menu-categorias .titulo {
+   font-size: 16px;
+   font-weight: bold;
+   margin-left: 5px;
+
+}
+
+.menu-categorias .menu-drop {
+   display: none;
+   flex-direction: row;
+   position: absolute;
+   background-color: black;
+   width: 100%;
+   top: 102%;
+   justify-content: space-between;
+   z-index: 10;
+}
+
+.menu-categorias:hover .menu-drop {
+   display: flex;
+
+}
+
+.sub-menu-drop {
+   display: flex;
+   justify-content: flex-start;
+   align-items: center;
+   width: 100%;
+   height: 100%;
+   margin-left: 5px;
+   background-color: black;
+   color: white;
+   border: 2.5px solid white;
+   margin: 10px 20px 10px 0px;
+   box-shadow: 0 0 15px 0px rgba(0, 0, 0, .3);
+   font-family: "Bebas Neue", 'Trebuchet MS', Arial, sans-serif;
+}
+
+.sub-menu-drop a {
+   color: white;
+   font-size: 1.2em;
+   font-family: "Bebas Neue", 'Trebuchet MS', Arial, sans-serif;
+}
+
+.sub-menu-drop li:hover {
+   transform: scale(1.2);
+}
+
+.titulo-lista {
+   font-size: 1.3em;
+   font-family: cursive, Courier, monospace;
+   margin-bottom: 15px;
+}
+
+.op-lista {
+   font-size: 1.1em;
+   margin-left: 10px;
+   margin-bottom: 10px;
+}
+
+.sub-menu-drop ul {
+   list-style-type: none;
+   padding-left: 15px;
+
+}
+
+.sub-menu-drop li {
+   list-style-type: none;
+}
+
+
+.info-pos-menu {
+   display: flex;
+   width: 100%;
+   height: 50px;
+   font-size: 23px;
+   background-color: black;
+   color: white;
+   justify-content: center;
+   align-items: center;
+}
+
+.info-pos-menu .svg-inline--fa {
+   font-size: 30px;
+   transform: scaleX(-1);
+}
+
+.info-pos-menu p {
+   padding: 0px 15px;
+
+}
+
+.frete-gratis {
+   font-weight: bold;
+   font-size: 30px;
+   padding: 0
+}
+
+.ou {
+   font-weight: bold;
+   font-size: 30px;
+   padding: 0
+}
+
+.filtros {
+   display: flex;
+   justify-content: center;
+   width: 15%
+}
+
+.caixa-filtros {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   border-radius: 10px;
+   background-color: #edf2f4;
+   box-shadow: 0 0 7px 0px black;
+   height: 625px;
+   margin-bottom: 15px;
+   margin-top: 100px;
+   width: 80%;
+}
+
+.sub-filtros {
+   display: flex;
+   flex-direction: column;
+   border-radius: 10px;
+   background-color: white;
+   width: 90%;
+   margin: 10px;
+   padding-bottom: 25px;
+   box-shadow: 0 0 5px 0px black;
+}
+
+.sub-filtros label {
+   margin-left: 15px;
+}
+
+.sub-filtros span {
+   font-family: "Chocolate Cookies", monospace;
+   padding: 15px;
+}
+
+.outros {
+   width: 15%;
+
+}
+
+#filtro-tam {
+   display: flex;
+   justify-content: center;
+}
+
+.b-tamanho {
+   background-color: white;
+   width: 20%;
+   margin: 0px 10px 0px 10px;
+   border: 2px solid black;
+}
+
+.principal {
+   display: flex;
+   width: 100%;
+   background-color: white;
+   justify-content: center;
+   flex-wrap: wrap;
+}
+
+.linha-principal {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   margin: 10px 0px 10px 0px;
+   width: 70%;
+   height: 100%;
+   background-color: white;
+
+}
+
+.linha-principal h2 {
+   width: 100%;
+   font-size: 1.6em;
+   font-weight: normal;
+   margin-left: 25px;
+   font-family: "Chocolate Cookies";
+
+}
+
+.linha-principal .nome-pag {
+   margin: 20px 0px 10px 30px;
+   font-family: "Chocolate Cookies";
+   font-size: 2.0em;
+}
+
+.banner {
+   margin: 0;
+   width: 100%;
+   /* height: 80%; */
+}
+
+.banner2 {
+   margin: 0;
+   width: 100%;
+   display: none;
+}
+
+.linha-fotos {
+   display: flex;
+   justify-content: space-between;
+   margin: 20px 5px;
+
+}
+
+.info-pos-menu .search-box {
+   display: none;
+}
+
+.outros {
+   display: flex;
+   align-items: flex-start;
+
+   margin-bottom: 50px;
+   margin-top: 200px;
+
+}
+
+.aviso-promo {
+   position: fixed;
+   z-index: 10;
+   width: 250px;
+   height: 250px;
+   top: 40%;
+   left: 85%;
+   margin: 19px;
+   box-shadow: 0px 0px 15px 0px black;
+   font-family: 'Trebuchet MS', Arial, sans-serif;
+   padding: 5px;
+   animation: mover 2s alternate 0s infinite ease-in-out;
+
+}
+
+/* .aviso-promo:hover{
+   animation: none;
+} */
+@keyframes mover {
+   from {
+      transform: translateY(-10px);
+   }
+}
+
+.aviso-promo img {
+   width: 100%;
+}
+
+.aviso-promo .btn-fechar {
+   border: 0px;
+   background-color: transparent;
+   color: white;
+   position: absolute;
+   margin-left: 220px;
+}
+
+.caixa-cep {
+   display: none;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   position: fixed;
+   background-color: black;
+   color: white;
+   z-index: 15;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   width: 250px;
+   height: 250px;
+   border: 7px solid white;
+   box-shadow: 0 0 0 1000px rgba(0, 0, 0, .3);
+}
+
+.caixa-cep .btn-fechar {
+   border: 0px;
+   background-color: white;
+   color: black;
+   position: absolute;
+   margin-left: 200px;
+   margin-bottom: 205px;
+
+}
+
+.btn-ok {
+   font-family: "Chocolate Cookies", monospace;
+   font-size: 1.1em;
+   border: 0px;
+   background-color: white;
+   color: black;
+   margin-top: 7px;
+
+}
+
+.btn-ok:active {
+   transform: scale(1.1);
+}
+
+.caixa-cep h1 {
+   margin: 0;
+}
+
+.caixa-cep input {
+   width: 50%;
+   margin-top: 5px;
+   outline: none;
+   font-size: 1.3em;
+   text-align: center;
+}
+
+input[type=number]::-webkit-inner-spin-button {
+   -webkit-appearance: none;
+
+}
+
+input[type=number] {
+   -moz-appearance: textfield;
+   appearance: textfield;
+
+}
+
+.card {
+   position: relative;
+   vertical-align: top;
+   width: 270px;
+   height: 300px;
+   margin: 19px;
+   box-shadow: 0px 0px 7px 0px black;
+   font-family: 'Trebuchet MS', Arial, sans-serif;
+   padding: 5px;
+
+}
+
+.card img {
+   width: 100%;
+   max-height: 77%;
+
+}
+
+.detalhes {
+   display:flex;
+   color: white;
+   position: absolute;
+   top: 70%;
+   left: 53%;
+   transform: translate(-60%, -60%);
+   background-color: black;
+   padding: 10px;
+   border: 2px solid white;
+   visibility: hidden;
+   font-family: "Bebas Regular";
+   font-size:1.2em;
+
+}
+
+@keyframes aparecer {
+   from {
+      opacity: 0;
+   }
+
+   to {
+      opacity: 1;
+   }
+}
+
+
+.card:hover .detalhes {
+   visibility: visible;
+   animation: aparecer 1.5s 0s both;
+}
+
+.card-nome-produto {
+   display: flex;
+   justify-content: center;
+   font-size: 1.2em;
+   font-family: "Chocolate Cookies", sans-serif;
+}
+
+.card-preco-produto {
+   display: flex;
+   justify-content: center;
+   color: green;
+   font-weight: 300;
+   font-size: 1.3em;
+   font-family: "Chocolate Cookies", sans-serif;
+
+}
+
+.card:hover {
+   transform: scale(1.1);
+}
+
+footer {
+   display: flex;
+
+   background-color: black;
+   color: white;
+   font-size: 0.8em;
+   justify-content: center;
+}
+
+footer a {
+   color: white;
+
+}
+
+footer h1 {
+   margin-bottom: 0;
+}
+
+footer h2 {
+   font-size: 1.4em;
+   margin-bottom: 0;
+   margin-top: 25px;
+}
+
+footer div {
+   margin-right: 20px;
+}
+
+footer .svg-inline--fa {
+   margin-right: 5px;
+
+}
+
+.foo-centro {
+   width: 70%;
+   display: flex;
+   margin: 0;
+   justify-content: space-between;
+}
+
+.foo-centro div {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.foo-centro h1 {
+   margin-left: 0;
+}
+
+
+.foo-centro ul {
+   padding-left: 20px;
+}
+
+@media (max-width: 1750px) {
+   .aviso-promo {
+      left: 85%
+   }
+}
+
+@media (max-width: 1450px) {
+   .aviso-promo {
+      display: none;
+   }
+
+   .caixa-filtros {
+      width: 90%;
+   }
+}
+
+@media (max-width: 1330px) {
+   .menu {
+      padding: 0;
+   }
+
+   .filtros {
+      width: 100%;
+      margin-top: 25px;
+   }
+
+   .caixa-filtros {
+      flex-direction: row;
+      width: 90%;
+      height: 200px;
+      margin-top: 0px;
+     
+   }
+
+   .main-cabecalho,
+   .infos-especiais {
+      padding: 0;
+   }
+
+   .info-pos-menu p {
+      font-size: 20px;
+   }
+
+   .linha-principal {
+      width: 100%;
+   }
+}
+
+@media (max-width: 800px) {
+   #filtro-preco {
+      display: none;
+   }
+   .detalhes{
+      padding: 5px;
+      font-size:0.7em;
+   }
+   
+}
+
+@media (max-width: 750px) {
+   .menu-categorias .menu-drop {
+      transform: translate(-90%, 0%);
+      width: 210px;
+      background-color: transparent;
+
+
+   }
+
+   .sub-menu-drop {
+      width: 100px;
+
+      margin: 0;
+   }
+
+   .sub-menu-drop a {
+      color: white;
+      font-size: 0.7em;
+   }
+
+   .titulo-lista {
+      font-size: 1.3em;
+      margin-bottom: 15px;
+   }
+
+   .sub-menu-drop ul {
+      padding-left: 7px;
+   }
+
+   .opcoes .catag2 {
+      display: none;
+   }
+
+   .opcoes {
+      justify-content: center;
+   }
+
+}
+
+@media (max-width: 670px) {
+   .banner {
+      display: none;
+      width: 100%;
+   }
+
+   .banner2 {
+      display: block;
+   }
+
+   .info-pos-menu p,
+   .main-cabecalho .search-box {
+      display: none;
+
+   }
+
+   .main-cabecalho {
+      justify-content: space-around;
+   }
+
+   .info-pos-menu .svg-inline--fa {
+      display: none;
+   }
+
+   .info-pos-menu .search-box {
+      display: flex;
+      font-size: initial;
+   }
+
+   .info-pos-menu .botaoLupa {
+      height: 44px;
+   }
+
+   .info-pos-menu .botaoLupa .svg-inline--fa {
+      display: flex;
+      height: 27px;
+      width: 27px;
+   }
+
+   .card {
+      width: 135px;
+      height: 150px;
+
+   }
+
+   .card-nome-produto {
+      font-size: 0.6em;
+      overflow: hidden;
+
+   }
+
+   .card-preco-produto {
+      padding-top: 4px;
+      font-size: 0.65em;
+   }
+
+   .linha-principal h2 {
+      display: none;
+   }
+
+
+
+
+}
+
+@media (max-width:540px) {
+   body {
+      zoom: 1.0;
+   }
+
+   .caixa-filtros {
+      width: 97%;
+   }
+
+   .sub-filtros {
+      font-size: 0.8em;
+      margin: 0px 5px;
+   }
+
+   .sub-filtros label {
+      margin-left: 0px;
+   }
+
+   .b-tamanho {
+      margin: 0px 7px;
+   }
+
+
+   .infos-especiais {
+      font-size: 10px;
+   }
+
+   .main-cabecalho .item-md {
+      display: none;
+   }
+
+   .linha-fotos {
+      display: none;
+   }
+
+   .foo-centro {
+      width: 90%;
+   }
+
+   .foo-centro div {
+      margin-right: 7px;
+   }
+
+   .foo-centro ul {
+      list-style-type: none;
+      padding: 0;
+   }
+
+   .foo-centro li {
+      padding-bottom: 3px;
+      padding-left: 8px;
+   }
+
+   footer h1 {
+      margin-bottom: 0;
+      font-size: 1.5em;
+   }
+
+   footer h2 {
+      font-size: 1.1em;
+      margin-bottom: 0;
+      margin-top: 25px;
+   }
+}

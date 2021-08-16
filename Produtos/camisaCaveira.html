@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clothes</title>
+    <link rel="stylesheet" href="../styles\estilo-produtos.css">
+    <script src="../script.js" async></script>
+
+</head>
+
+<body>
+    <header class="cabecalho">
+        <div class="infos-especiais">
+            <div>
+                <a href=""><i class="fas fa-question-circle"></i></a>
+                <a href="">Tire suas duvidas</a>
+            </div>
+            <div>
+                <a href=""><i class="fas fa-mobile-alt"></i></a>
+                <a href="">Baixe o app</a>
+            </div>
+            <div>
+                <span>Redes Socias</span>
+                <a href=""><i class="fab fa-instagram"></i></a>
+                <a href=""><i class="fab fa-facebook-square"></i></a>
+                <a href=""><i id="iyoutube" class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+        <div class="main-cabecalho">
+            <a href="../index.html">
+                <h1 class="nome">CLOTHES</h1>
+            </a>
+            <div class="search-box">
+                <input class="search-txt" type="text" name="" placeholder="Faça a sua pesquisa ">
+                <button class="botaoLupa">
+                    <a class="search-btn" href="#">
+                        <i class="fas fa-search"></i>
+                    </a>
+                </button>
+            </div>
+            <div class="menu-direita">
+                <a href=""><i class="far fa-heart"></i></a>
+                <a class="item-md" href="">Lista de Desejos</a>
+                <a href=""><i class="far fa-user"></i></a>
+                <a class="item-md" href="">Entrar</a>
+                <a href=""><i class="fas fa-shopping-cart"></i></a>
+            </div>
+        </div>
+        <nav class="menu">
+            <div class="cep">
+                <i class="fas fa-map-marker-alt"></i>
+                <p id="cep-topo">Informe seu CEP</p>
+            </div>
+            <div class="caixa-cep">
+                <button id="bf2" class="btn-fechar">X</button>
+                <h1 class="nome">CLOTHES</h1>
+                <span>Informe o CEP:</span>
+                <input id="input-cep" type="number">
+                <button id="ok-cep" class="btn-ok">OK</button>
+            </div>
+            <div class="opcoes">
+                <div class="menu-categorias">
+                    <i class="fas fa-bars"></i>
+                    <div class="titulo">Todas as categorias</div>
+                    <div class="menu-drop">
+                        <div class="sub-menu-drop" style="margin-left:20px">
+                            <ul>
+                                <li class="titulo-lista"><a href="../masculino.html">Masculino</a>
+                                <li class="op-lista">
+                                    <a href="">Camisas</a>
+                                </li>
+                                <li class="op-lista">
+                                    <a href="">Camisetas</a>
+                                </li>
+                                <li class="op-lista">
+                                    <a href="">Calçados</a>
+                                </li>
+                                <li class="op-lista">
+                                    <a href="">Calças</a>
+                                </li>
+
+                                <li class="op-lista">
+                                    <a href="">Bermudas</a>
+                                </li>
+
+                                <li class="op-lista">
+                                    <a href="">Agasalhos</a>
+                                </li>
+
+                                <li class="op-lista">
+                                    <a href="">Acessorios</a>
+                                </li>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="sub-menu-drop">
+                            <ul>
+                                <li class="titulo-lista"><a href="../feminino.html">Feminino</a>
+                                <li class="op-lista">
+                                    <a href="">Camisas</a>
+                                </li>
+                                <li class="op-lista">
+                                    <a href="">Camisetas</a>
+                                </li>
+                                <li class="op-lista">
+                                    <a href="">Calçados</a>
+                                </li>
+                                <li class="op-lista">
+                                    <a href="">Calças</a>
+                                </li>
+
+                                <li class="op-lista">
+                                    <a href="">Saias</a>
+                                </li>
+
+                                <li class="op-lista">
+                                    <a href="">Agasalhos</a>
+                                </li>
+
+                                <li class="op-lista">
+                                    <a href="">Acessorios</a>
+                                </li>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="sub-menu-drop">
+                            <ul>
+                                <li class="titulo-lista"><a href="">Infantil</a>
+                                <li class="op-lista">
+                                    <a href="">Camisas</a>
+                                </li>
+                                <li class="op-lista">
+                                    <a href="">Camisetas</a>
+                                </li>
+                                <li class="op-lista">
+                                    <a href="">Calçados</a>
+                                </li>
+                                <li class="op-lista">
+                                    <a href="">Calças</a>
+                                </li>
+
+                                <li class="op-lista">
+                                    <a href="">Bermudas</a>
+                                </li>
+
+                                <li class="op-lista">
+                                    <a href="">Agasalhos</a>
+                                </li>
+
+                                <li class="op-lista">
+                                    <a href="">Acessorios</a>
+                                </li>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="sub-menu-drop">
+                            <ul>
+                                <li class="titulo-lista"><a href="">Promoções</a></li>
+                                <li class="op-lista">
+                                    <a href="">Masculino</a>
+                                </li>
+
+                                <li class="op-lista">
+                                    <a href="">Feminino</a>
+                                </li>
+
+                                <li class="op-lista">
+                                    <a href="">Infantil</a>
+                                </li>
+
+                                <li class="op-lista">
+                                    <a href="">Acessorios</a>
+                                </li>
+                                <li class="op-lista">
+                                    <a href=""></a>
+                                </li>
+                                <li class="op-lista">
+                                    <a href=""></a>
+                                </li>
+                                <li class="op-lista">
+                                    <a href=""></a>
+                                </li>
+
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="catag2">
+                    <a href="../masculino.html">Masculino</a>
+                    <a href="../feminino.html">Feminino</a>
+                    <a href="">Infantil</a>
+                    <a href="">Acessorios</a>
+                    <a href="">Novidades</a>
+                    <a href="">Outlet</a>
+                </div>
+            </div>
+        </nav>
+        <div class="info-pos-menu">
+            <p>COMPRE MILHARES DE PRODUTOS COM <p class="frete-gratis">FRETE GRATIS*</p>
+            </p>
+            <i class="fas fa-truck"></i>
+            <p class="ou">OU <p>RETIRE NA LOJA</p>
+                <p style="font-weight:100; font-size:10px; ">*CONSULTE O REGULAMENTO</p>
+            </p>
+            <div class="search-box">
+                <input class="search-txt" type="text" name="" placeholder="Faça a sua pesquisa ">
+                <button class="botaoLupa">
+                    <a class="search-btn" href="#">
+                        <i class="fas fa-search"></i>
+                    </a>
+                </button>
+            </div>
+        </div>
+    </header>
+    <div class="principal">
+        <aside class="filtros">
+
+        </aside>
+        <div class="linha-principal">
+            <div class="produto-principal">
+                <div class="outras-fotos">
+                    <div class="caixa-foto">
+                        <img src="../imagens\camisa_caveira.png" alt="camisa_caveira" class="img-produto">
+                    </div>
+                    <div class="caixa-foto">
+                        <img src="../imagens\camisa_caveira.png" alt="camisa_caveira" class="img-produto">
+                    </div>
+                    <div class="caixa-foto">
+                        <img src="../imagens\camisa_caveira.png" alt="camisa_caveira" class="img-produto">
+                    </div>
+                    <div class="caixa-foto">
+                        <img src="../imagens\camisa_caveira.png" alt="camisa_caveira" class="img-produto">
+                    </div>
+                </div>
+                <div class="caixa-foto-produto"><img src="../imagens\camisa_caveira.png" alt="camisa_caveira" class="img-produto"></div>
+                <div class="outras-fotos-mobile">
+                    <div class="caixa-foto">
+                        <img src="../imagens\camisa_caveira.png" alt="camisa_caveira" class="img-produto">
+                    </div>
+                    <div class="caixa-foto">
+                        <img src="../imagens\camisa_caveira.png" alt="camisa_caveira" class="img-produto">
+                    </div>
+                    <div class="caixa-foto">
+                        <img src="../imagens\camisa_caveira.png" alt="camisa_caveira" class="img-produto">
+                    </div>
+                    <div class="caixa-foto">
+                        <img src="../imagens\camisa_caveira.png" alt="camisa_caveira" class="img-produto">
+                    </div>
+                </div>
+                <div class="infos-produto">
+                    <div class="titulo-produto"> Camisa caveira</div>
+                    <p class="descricao-produto">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque quisquam itaque ad, est hic esse
+                        repellat labore provident aliquid eveniet veritatis ipsa quis ex amet voluptatem sequi. Ratione,
+                        nobis fuga?
+                    </p>
+
+                    <s>R$59,99</s>
+                    <span class="preco-produto">R$49,99</span>
+                    <span>Cor:</span>
+                    <div class="caixa-cores" style="display: flex;">
+                        <div class="caixa-cor" style="background-color:black">
+
+                        </div>
+                        <div class="caixa-cor" style="background-color:white">
+
+                        </div>
+                        <div class="caixa-cor" style="background-color:blue">
+
+                        </div>
+                        <div class="caixa-cor" style="background-color:red">
+
+                        </div>
+                    </div>
+                    <span>Tamanho:</span>
+                    <div id="filtro-tam">
+                        <button class="b-tamanho">P</button>
+                        <button class="b-tamanho">M</button>
+                        <button class="b-tamanho">G</button>
+                    </div>
+                    <div class="div-comprar"><button class="b-comprar">COMPRAR</button></div>
+                    <div class="b-extras">
+                        <button class="b-cep">CEP</button>
+                        <span class="b-salvar">
+                            <span id="coracao-vazio">
+                                <i  class="far fa-heart"></i>
+                            </span>
+                            <span id="coracao-cheio">
+                                <i class="fas fa-heart"></i>
+                            </span>
+                        </span>
+                        
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="extras-produto">
+                <h3>Descrição</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet harum corrupti maxime, impedit eum
+                    voluptas nulla placeat quis, mollitia deserunt quos sint saepe, consequuntur quae consequatur! Quas
+                    molestiae eligendi facilis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde totam
+                    libero voluptas vel necessitatibus officia dignissimos ea reprehenderit tenetur, veniam quae!
+                    Ducimus officia vel, voluptatum ad quam error. Tempore, voluptate?
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias, nihil sint id minima ex tenetur
+                    quasi voluptatibus amet vero, pariatur repellendus? Aspernatur dolor atque nostrum delectus
+                    blanditiis et sint expedita?</p>
+                <h3>Informações</h3>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis incidunt atque molestiae corporis
+                expedita veniam ipsa dolor asperiores soluta doloribus inventore beatae consequatur est, reprehenderit
+                nulla sequi eos vero modi!
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad cupiditate iste inventore delectus saepe
+                architecto officia dolores reprehenderit dolorem nihil sed id, deleniti adipisci sapiente laudantium ut
+                at ducimus ipsum!
+            </div>
+
+        </div>
+        <aside class="outros">
+
+        </aside>
+    </div>
+
+    <footer>
+        <div class="foo-centro">
+            <div>
+                <h1 class="nome">CLOTHES</h1>
+                <p>Desde 1998 contribuindo com a moda.</p>
+            </div>
+            <div>
+                <h2>Informações</h2>
+                <ul>
+                    <a href="">
+                        <li>Fale conosco</li>
+                    </a>
+                    <a href="">
+                        <li>Entregas</li>
+                    </a>
+                    <a href="">
+                        <li>Formas de Pagamento</li>
+                    </a>
+                    <a href="">
+                        <li>Como Comprar</li>
+                    </a>
+                </ul>
+            </div>
+            <div>
+                <h2>Redes Sociais</h2>
+                <ul>
+                    <li><a href=""><i class="fab fa-instagram"></i> Instagram</a></li>
+                    <li><a href=""><i class="fab fa-facebook-square"></i>Facebook</a></li>
+                    <li><a href=""><i id="iyoutube" class="fab fa-youtube"></i>YouTube</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
