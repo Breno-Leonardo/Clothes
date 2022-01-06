@@ -2,7 +2,7 @@
 
 Link: https://breno-leonardo.github.io/Clothes/
 
-Projeto realizado com HTML, CSS e um pouco de Java Script, com o intuito de treinar no inicio da aprendizagem.
+Projeto realizado com HTML, CSS e um pouco de Java Script, com o intuito de treinar principalmente princípios básicos, layout, Flex-box e responsividade.
 
 ![1](https://user-images.githubusercontent.com/58619307/129619509-fda63b23-6b1d-4eb7-9d61-343a2ec80312.png)
 
